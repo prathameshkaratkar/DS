@@ -1,0 +1,70 @@
+### Assignment No 1:
+
+Open Terminal 1:
+
+    javac *.java
+    rmic AddServerImpl
+
+Open Terminal 2:
+
+    rmiregistry
+
+Open Terminal 3:
+
+    java AddServer
+
+Open Terminal 4:
+
+    java AddClient 127.0.0.1 5 8
+
+### Assignment No 2:
+
+Open Terminal 1:
+
+    idlj -fall ReverseModule.idl
+    javac *.java ReverseModule/*.java
+    orbd -ORBInitialPort 1056&
+    java ReverseServer -ORBInitialPort 1056& 
+
+Open Terminal 2:
+
+    java ReverseClient -ORBInitialPort 1056 -ORBInitialHost localhost
+
+### Assignment No 3:
+
+Open Terminal:
+
+    export MPJ_HOME=/home/student/Downloads/mpj-v0_44
+    export PATH=$MPJ_HOME/bin:$PATH
+    javac -cp $MPJ_HOME/lib/mpj.jar ArrSum.java
+    $MPJ_HOME/bin/mpjrun.sh -np 4 ArrSum
+
+### Assignment No 4:
+
+Open Terminal 1:
+
+    python client.py
+
+
+Open Terminal 2:
+
+    python server.py
+
+### Assignment No 5:
+
+Open Terminal
+
+    javac Tring.java
+    java Tring
+
+### Assignmnet No 6:
+
+Open Terminal
+
+    javac Bully.java
+    java Bully
+    javac Ring.java
+    java Ring
+
+    
+
